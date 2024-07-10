@@ -5,7 +5,12 @@ function getValue(val) {
 }
 
 function calculate() {
-  display.value = eval(display.value);
+  try {
+    display.value = eval(display.value);
+  }
+  catch(err) {
+    display.value = "Error";
+  }
 }
 
 function clearDisplay() {

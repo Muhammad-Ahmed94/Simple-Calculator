@@ -5,32 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>PracticeJS</title>
 </head>
 
 <body>
 
     <div class="container">
+        <h1>calculator</h1>
+
         <input type="text" class="display-value" readonly>
 
         <div class="keypad">
             <button class="keys" onclick="getValue('7')">7</button>
             <button class="keys" onclick="getValue('8')">8</button>
             <button class="keys" onclick="getValue('9')">9</button>
-            <button class="keys" onclick="getValue('/')">/</button>
+            <button class="keys-operator" onclick="getValue('/')">/</button>
             <button class="keys" onclick="getValue('4')">4</button>
             <button class="keys" onclick="getValue('5')">5</button>
             <button class="keys" onclick="getValue('6')">6</button>
-            <button class="keys" onclick="getValue('*')">*</button>
-            <button class="keys" onclick="getValue('1')">1</button>
+            <button class="keys-operator" onclick="getValue('*')">*</button>
+            <button class="keys" onclick="getValue('3')">1</button>
             <button class="keys" onclick="getValue('2')">2</button>
-            <button class="keys" onclick="getValue('3')">3</button>
-            <button class="keys" onclick="getValue('-')">-</button>
-            <button class="keys" onclick="getValue('+')">+</button>
-            <button class="keys" onclick="getValue('.')">.</button>
-            <button class="keys" onclick="calculate()">=</button>
-            <button class="keys" onclick="clearDisplay()">C</button>
+            <button class="keys" onclick="getValue('1')">3</button>
+            <button class="keys-operator" onclick="getValue('-')">-</button>
+            <button class="keys" onclick="getValue('0')">0</button>
+            <button class="keys-operator" onclick="clearDisplay()">C</button>
+            <button class="keys-operator" onclick="calculate()">=</button>
+            <button class="keys-operator" onclick="getValue('+')">+</button>
+            <button class="keys-operator" onclick="getValue('.')">.</button>
         </div>
     </div>
 
