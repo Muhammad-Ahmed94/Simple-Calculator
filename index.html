@@ -5,19 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>PracticeJS</title>
 </head>
 
 <body>
 
     <div class="container">
-        <h1>stopwatch</h1>
+        <input type="text" class="display-value" readonly>
 
-        <label for="" class="display">00:00:00:00</label><br>
-        <button class="start" onclick="start()">start</button>
-        <button class="stop" onclick="stop()">stop</button>
-        <button class="reset" onclick="reset()">reset</button>
+        <div class="keypad">
+            <button class="keys" onclick="getValue('7')">7</button>
+            <button class="keys" onclick="getValue('8')">8</button>
+            <button class="keys" onclick="getValue('9')">9</button>
+            <button class="keys" onclick="getValue('/')">/</button>
+            <button class="keys" onclick="getValue('4')">4</button>
+            <button class="keys" onclick="getValue('5')">5</button>
+            <button class="keys" onclick="getValue('6')">6</button>
+            <button class="keys" onclick="getValue('*')">*</button>
+            <button class="keys" onclick="getValue('1')">1</button>
+            <button class="keys" onclick="getValue('2')">2</button>
+            <button class="keys" onclick="getValue('3')">3</button>
+            <button class="keys" onclick="getValue('-')">-</button>
+            <button class="keys" onclick="getValue('+')">+</button>
+            <button class="keys" onclick="getValue('.')">.</button>
+            <button class="keys" onclick="calculate()">=</button>
+            <button class="keys" onclick="clearDisplay()">C</button>
+        </div>
     </div>
 
     <script src="index.js"></script>

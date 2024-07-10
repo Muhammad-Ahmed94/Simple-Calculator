@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "simple calculator using JS and sass",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
